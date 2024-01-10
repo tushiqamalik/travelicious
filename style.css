@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+body{
+    background: rgba(255, 201, 143, 0.973);
+    height: 1000px;
+}
+/* CSS for Navbar starts */
+nav{
+    background: rgba(255, 201, 143, 0.973);
+    color: rgb(255, 247, 238);
+}
+.navbar-brand{
+    color: black;
+    font-family: Rubik Doodle Shadow;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+.navbar-brand span{
+    color: crimson;
+}
+.navbar-brand a:hover{
+    text-decoration: none;
+}
+.navbar-toggler span{
+    color: crimson;
+    font-weight: 700;
+}
+#navbarSupportedContent li a{
+    margin-left: 10px;
+    font-family: Kanit;
+    color: black;
+    font-weight: 550;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+#navbarSupportedContent .dropdown-menu li a{
+    color: black;
+}
+#navbarSupportedContent li a:hover{
+    background: crimson;
+    color: white;
+}
+.navbar form button{
+    background-color: crimson;
+    color: white;
+    border: none;
+}
+/* CSS for Navbar ends */
+
+/* CSS for Home starts */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(./images/background\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+.home .container-fluid{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .container-fluid h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .container-fluid h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.home h1{
+    animation: slideTop 1s ease forwards;
+  animation-delay: 0.7s;
+}
+.home h1 span{
+    color: crimson;
+}
+/* .changecontent::after{
+    content: ' ';
+    color: crimson;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext {
+    0%{ content: "United States";}
+    10%{ content: "Germany";}
+    20%{ content: "Italy";}
+    30%{ content: "Indonesia";}
+    40%{ content: "India";}
+    50%{ content: "France";}
+    60%{ content: "Australia";}
+    70%{ content: "Turkey";}
+    80%{ content: "Spain";}
+    90%{ content: "Mexico";}
+    100%{ content: "Korea";}
+} */
+.home .container-fluid p{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.home .container-fluid a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: white;
+    color: crimson;
+    font-weight: 600;
+    font-family: Kanit;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.home .container-fluid a:hover{
+    background-color: crimson;
+    color: white;
+}
+@media (max-width: 850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width: 450px){
+    .home .container-fluid h5{
+        font-size: 25px;
+    }
+    .home .container-fluid h1{
+        font-size: 38px;
+    }
+    .home .container-fluid p{
+        font-size: 13px;
+    }
+}
+/* CSS for Home ends */
+
+/* CSS for Book begin */
+.book{
+    font-family: 'Times New Roman', Times, serif;
+    background: rgba(255, 201, 143, 0.973);
+    padding: 30px;
+}
+.book button{
+    background-color: crimson;
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-weight: 550;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book button:hover{
+    background-color: white;
+    color: crimson;
+    font-size: 20px;
+}
+.maintext h1{
+    text-shadow: 0px 1p 1px black;
+    font-weight: 600;
+    color: crimson;
+}
+.maintext h1 span{
+    color: black;
+}
+.book .img{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 3px;
+}
+.book form ::placeholder{
+    color: black;
+}
+.book form label{
+    font-size: 15px;
+    color: black;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    background-color: rgba(255, 201, 143, 0.973);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    padding: 10px;
+    color: black;
+    background-color: rgba(255, 201, 143, 0.973);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+@media(max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .maintext h1{
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+/* CSS for Book ends */
+
+/* CSS for Packages begin */
+.packages{
+    font-family: 'Times New Roman', Times, serif;
+    background: rgba(255, 201, 143, 0.973);
+    padding: 8px;
+}
+.maintext2 h1{
+    text-shadow: 0px 1p 1px black;
+    font-weight: 600;
+    color: crimson;
+}
+.maintext2 h1 span{
+    color: black;
+}
+.packages .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    margin: 10px auto 30px auto;
+}
+.packages a{
+    text-decoration: none;
+    color: white;
+    background-color: crimson;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: crimson; 
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body h5{
+    font-weight: 600;
+}
+
+/* CSS for Packages end */
+
+/* CSS for Services begin */
+.services{
+    padding: 50px;
+    background-color: rgba(255, 201, 143, 0.973);
+    font-family: 'Times New Roman', Times, serif;
+}
+.services .card{
+    box-shadow: 0px 5px 5px -6px black;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px auto 10px auto;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: crimson;
+    margin-top: 30px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* CSS for Services end */
+
+/* CSS for Gallery begin */
+.gallery{
+    padding: 5px;
+    background-color: rgba(255, 201, 143, 0.973);
+    font-family: 'Times New Roman', Times, serif;
+}
+.gallery .card{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+    margin: 10px auto 10px auto;
+}
+.gallery .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallery .card img:hover{
+    transform: scale(1.1);
+}
+/* CSS for Gallery end */
+
+/* CSS for About begin */
+.about{
+    padding: 50px;
+    background-color: rgba(255, 201, 143, 0.973);
+    font-family: 'Times New Roman', Times, serif;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500 ;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: crimson;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width: 765px){
+    .about{
+        padding: 0px;
+    }
+}
+/* CSS for About end */
+
+/* CSS for Footer start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background-color: rgba(255, 201, 143, 0.973);
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: crimson;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background-color: crimson;
+    transform: scale(1.1);
+}
+/* CSS for Footer end */
