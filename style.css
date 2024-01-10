@@ -80,14 +80,7 @@ nav{
     text-shadow: 0px 1px 1px black;
     margin-top: 5px;
 }
-.home h1{
-    animation: slideTop 1s ease forwards;
-  animation-delay: 0.7s;
-}
-.home h1 span{
-    color: crimson;
-}
-/* .changecontent::after{
+.changecontent::after{
     content: ' ';
     color: crimson;
     text-shadow: 0px 1px 1px black;
@@ -105,7 +98,7 @@ nav{
     80%{ content: "Spain";}
     90%{ content: "Mexico";}
     100%{ content: "Korea";}
-} */
+}
 .home .container-fluid p{
     color: white;
     font-size: 17px;
